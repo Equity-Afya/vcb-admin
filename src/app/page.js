@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-import React from 'react'
-import Login from './login/page'
-=======
 // // "use client";
 // // import { useState, useContext } from "react";
 // // import axios from "axios";
@@ -193,20 +189,12 @@ import Login from './login/page'
 import React from "react";
 import Login from "./login/page";
 
->>>>>>> b7ab2dbc77114df8f35d644c73e834f660993aa0
 const page = () => {
   return (
     <div>
       <Login />
     </div>
-<<<<<<< HEAD
-  )
-}
-
-export default page
-=======
   );
 };
 
 export default page;
->>>>>>> b7ab2dbc77114df8f35d644c73e834f660993aa0
