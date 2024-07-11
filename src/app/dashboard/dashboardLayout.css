@@ -1,0 +1,16 @@
+.dashboard-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr; 
+  height: 100vh; 
+  transition: grid-template-columns 0.3s; /* Smooth transition for grid layout */
+}
+
+.dashboard-layout.collapsed {
+  grid-template-columns: 50px 1fr; /* Adjust grid layout when sidebar is collapsed */
+}
+
+.content {
+  padding: 20px; 
+  overflow-y: auto; 
+  background-color: #f8f9fa; 
+}
