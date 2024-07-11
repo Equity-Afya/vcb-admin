@@ -26,7 +26,10 @@ const Dashboard = () => {
             Welcome, {session.user.entity.firstName}{" "}
             {session.user.entity.lastName}
           </h1>
+
           <p>Role: {session.user.entity.primaryRole}</p>
+          <h3>permissions</h3>
+          <ul>{session.user.entity.roles[0].permissions.map(p => <li>{p.name}</li>)}</ul>
         </div>
       ) : (
         <div>You need to be authenticated to view this page.</div>
