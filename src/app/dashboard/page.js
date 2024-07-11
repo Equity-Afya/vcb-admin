@@ -18,7 +18,7 @@ const Dashboard = () => {
   }
 
   return (
-    <div>
+    <div >
       {console.log(session)}
       {session ? (
         <div>
