@@ -1,15 +1,19 @@
+"use client"
 import React from 'react';
-import './sidebar.css'; // Import the CSS file
+import './sidebar.css'; 
 
-function Sidebar() {
+function Sidebar({ isCollapsed, toggleSidebar }) {
   return (
-    <div className="sidebar">
+    <div className={`sidebar ${isCollapsed ? 'collapsed' : ''}`}>
+      <button onClick={toggleSidebar} className="toggle-button">
+        {isCollapsed ? '>' : '<'}
+      </button>
       <ul>
-        <li>Maintenance</li>
-        <li>Corporate Maintenance</li>
-        <li>Manage Corp User</li>
-        <li>Reports</li>
-        <li>Settings</li>
+        <li><span className="icon">🔧</span><span className="text">Maintenance</span></li>
+        <li><span className="icon">🏢</span><span className="text">Corporate Maintenance</span></li>
+        <li><span className="icon">👤</span><span className="text">Manage Corp User</span></li>
+        <li><span className="icon">📊</span><span className="text">Reports</span></li>
+        <li><span className="icon">⚙️</span><span className="text">Settings</span></li>
       </ul>
     </div>
   );
